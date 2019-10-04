@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <title>To do list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // fetch('http://localhost:8000/all').then(res => res.json()).then((res) => {
+        //     let List = res;
+        //     console.log(List);
+        //     if (List.length > 0) {
+        //         let list = List.map((item, index) => {
+        //             return `<li id="${item._id}" class="${"task" + " d-flex"}">
+        //                         <div class="${"task__label " + "input-group-prepend"}">
+        //                             <button type="button" class="${"task__delete " + "btn"}">Удалить</button>
+        //                             <input type="checkbox" class="task__checkbox" ${status}>
+        //                         </div>
+        //                         <div class="app__text">
+        //                             <div class="task__textwrapper">${item.text}</div>
+        //                         </div>
+        //                     </li>`;
+        //         })
+        //         const result = $("#tasksList");
+        //         result.html("");
+        //         result.append(list);
+        //     }
+        //
+        // }).catch(error => console.log(error));
+    </script>
+    <script src="js/lodash.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body class="body">
+<div class="app container">
+    <div class="header">
+        <h1 class="app__title">To Do List</h1>
+    </div>
+    <div class="app__wrapper">
+        <div class="app__checkbox-wrapper">
+            <input type="checkbox" id="selectAllTask">
+            <label for="selectAllTask" class="app__checkbox-label">Выбрать все</label>
+        </div>
+        <ul class="app__tags tags">
+            <li class="app__tag">
+                <a id="all" class="state__link active" data-toggle="list" href="#">Все</a>
+            </li>
+            <li class="app__tag">
+                <a id="completed" class="state__link" data-toggle="list" href="#">Выполненные</a>
+            </li>
+            <li class="app__tag">
+                <a id="notCompleted" class="state__link" data-toggle="list" href="#">Невыполненные</a>
+            </li>
+        </ul>
+        <button id="deleteAllButton" class="app__button btn">Удалить завершенные</button>
+    </div>
+    <div class="app__wrapper">
+            <input id="inputTask" class="form-control" type="text">
+            <button id="addButton" class="form__button btn">Добавить задачу</button>
+    </div>
+    <div class="app_group">
+        <div class="app__wrapper tasks">
+            <ul id="tasksList" class="tasks__list"></ul>
+        </div>
+        <div class="app__wrapper">
+        <ul id="pagination" class="app__pagination"></ul>
+    </div>
+    </div>
+    <ul class="app__counter list-group counter">
+        <li class="app__counter-item">
+            <div id="counterLabelAll" class=" counter__label">Все:</div>
+            <div class="counter__value">0</div>
+        </li>
+        <li class="app__counter-item">
+            <div id="counterLabelChecked" class=" counter__label">Выполненные:</div>
+            <div class="counter__value">0</div>
+        </li>
+        <li class="app__counter-item">
+            <div id="counterLabelUnchecked" class=" counter__label">Невыполненные:</div>
+            <div class="counter__value">0</div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

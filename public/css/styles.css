@@ -1,0 +1,188 @@
+.app__title {
+    padding: 25px 0;
+    font-size: 50px;
+    font-family: Vibes;
+}
+.d-flex.app-wrapper {
+    width: 80%;
+}
+#delete_all_button {
+    width: 100%;
+}
+#tasksList {
+    list-style: none;
+}
+.item__checkbox {
+    align-self: center;
+    margin: 0 12px;
+}
+.content__form {
+    margin-bottom: 20px;
+}
+.pagination__link {
+    padding: 5px 10px;
+    border: 1px solid lightblue;
+}
+.content__pagination {
+    display: flex;
+    list-style: none;
+}
+.pagination__link_active {
+    background: deepskyblue;
+    color: #fff;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.state__link {
+    padding: 10px 30px;
+    color: deepskyblue;
+    background: #ff0;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.body {
+    font-family: 'Roboto Mono';
+    background-color: #FFEFEF;
+}
+.app.container {
+    margin: 5% auto;
+    width: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, .3);
+    padding: 0;
+}
+.header {
+    background-color: #FFC0CB;
+    color: #fff;
+}
+.app__title {
+    padding: 25px 0;
+    font-size: 50px;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+.app__wrapper {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.app__checkbox-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+.app__checkbox-label {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-bottom: 0;
+}
+.app__tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.app__tag {
+    margin-right: 10px;
+}
+.app__tag:last-child {
+    margin-right: 0;
+}
+.state__link {
+    padding: 8px 10px;
+    color: #fff;
+    background: #808000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    opacity: .5;
+}
+.state__link:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+}
+#selectAllTask {
+    margin-right: 5px;
+}
+.app__button {
+    background: #A52A2A;
+    width: auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+.app__button:hover {
+    background: #f52A2A;
+}
+.form__button {
+    text-transform: uppercase;
+    color: #fff;
+    background: #30D5C8;
+}
+.form__button:hover {
+    background: #10a0a0;
+}
+.task {
+    align-items: center;
+}
+.task_list {
+    list-style: none;
+    padding: 0 20px;
+}
+.tasks__list {
+    width: 100%;
+}
+.task__delete {
+    margin-right: 15px;
+}
+.task__label {
+    align-items: center;
+}
+.task__checkbox {
+    margin-right: 30px;
+}
+.app__pagination {
+    display: flex;
+}
+.pagination__link {
+    padding: 5px 10px;
+    border: 1px solid #30D5C8;
+    cursor: pointer;
+}
+.pagination__link_active {
+    background: #30D5C8;
+    color: #fff;
+}
+.app__counter.list-group.counter {
+    flex-direction: row;
+    padding: 0 20px 20px;
+    margin-bottom: 18px;
+}
+.app__counter-item {
+    padding: 5px 15px;
+    color: #fff;
+    background: #808000;
+    text-transform: uppercase;
+    display: flex;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.task {
+    margin-bottom: 20px;
+}
+.task__delete.btn {
+    background: #A52A2A;
+    color: #fff;
+    text-transform: uppercase;
+}
+.form__group {
+    flex: 1;
+}
+.state__link.active {
+    background: #505000;
+    opacity: 1;
+}
